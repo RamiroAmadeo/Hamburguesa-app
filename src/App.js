@@ -1,23 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Header from "./components/Header";
+import List from "./components/List";
+import Button from "./components/Button";
 
-function App() {
+const App = () => {
+  const [list] = useState([
+    {
+      id: 1,
+      text: 'Hamburguesa STACKER',
+      day: '5 de marzo',
+      reminder: true,
+    },
+    {
+      id: 2,
+      text: 'Hamburguesa PAPITO RICO',
+      day: '8 de abril',
+      reminder: true,
+    },
+    {
+      id: 3,
+      text: 'Hamburguesa EL MEXICANO',
+      day: 'tu puta madre',
+      reminder: false,
+    },
+    {
+      id: 4,
+      text: 'Hamburguesa VEGGETARIANASHE',
+      day: '5 de marzo',
+      reminder: true,
+    },
+    {
+      id: 5,
+      text: 'Hamburguesa TAPATIO',
+      day: '5 de marzo',
+      reminder: true,
+    },
+    {
+      id: 6,
+      text: 'Hamburguesa SNOOP',
+      day: '5 de marzo',
+      reminder: true,
+    },
+  ])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <List list={list}/>
+      <Button />
     </div>
   );
 }
