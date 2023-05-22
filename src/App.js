@@ -1,59 +1,19 @@
-import { useState } from "react";
-import Header from "./components/Header";
-import List from "./components/List";
-import Button from "./components/Button";
-import Navbar from "./components/Navbar"
-import TripleBurger from "./assets/hamburguesa-triple.webp"
-import FieldBurger from "./assets/hamburguesa-campo.jpg"
-import ClassicBurger from "./assets/hamburguesa-simple.jpg"
-import OnionBurger from "./assets/hamburguesa-cebolla.jpg"
-import Hamburguesonsio from "./assets/hamburguesonsio.jpg"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import MoreInfo from "./pages/MoreInfo";
 
 const App = () => {
-  const [list] = useState([
-    {
-      id: 1,
-      text: 'TRIPLE BRO BURGER',
-      day: '5 de marzo',
-      reminder: 'true',
-      img: TripleBurger,
-    },
-    {
-      id: 2,
-      text: 'FIELD BURGER',
-      day: '8 de abril',
-      reminder: true,
-      img: FieldBurger,
-    },
-    {
-      id: 3,
-      text: 'CLASSIC BURGUER',
-      day: 'tu puta madre',
-      reminder: false,
-      img: ClassicBurger,
-    },
-    {
-      id: 4,
-      text: 'ONION BURGUER',
-      day: '5 de marzo',
-      reminder: true,
-      img: OnionBurger,
-    },
-    {
-      id: 5,
-      text: 'HAMBURGUESONSIO',
-      day: '5 de marzo',
-      reminder: true,
-      img: Hamburguesonsio,
-    },
-  ])
   return (
-    <div className="App">
-      <Header />
-      <Navbar />
-      <List list={list}/>
-      <Button />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={ <Home/> }/>
+          <Route path="/about" element={<About/>} />
+          <Route path="/info" element={<MoreInfo/>} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

@@ -1,11 +1,16 @@
 import headerStyle from './Header.module.css'
 import icono from "../assets/icono-hamburguesa.png"
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <header className={headerStyle}>
-            <img src={icono}></img>
-            <h1>Nombre hamburgueseria</h1>
+            <Link to="/">
+                <img src={icono} alt=''></img>
+            </Link>
+            <Link>
+                <h1>Nombre hamburgueseria</h1>
+            </Link>
         </header>
     );
 };
