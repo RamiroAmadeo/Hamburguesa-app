@@ -2,9 +2,14 @@ import listStyle from './List.module.css'
 
 const List = ({list}) => {
     return(
-        <tr>
+        <tr className={listStyle}>
             {list.map((list) => (
-                <h3 key={list.id}>{list.text}</h3>
+                <td>
+                    <h3 key={list.id}>{list.text}
+                        <h4>{list.day}</h4>
+                    </h3>
+                    <img className={listStyle.img} src={list.img} alt=''></img>
+                </td>
             ))}
         </tr>
     )
