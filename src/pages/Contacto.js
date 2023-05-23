@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 
-const MoreInfo = () => {
+const Contacto = () => {
     return(
         <>
             <Header />
@@ -10,4 +10,4 @@ const MoreInfo = () => {
     );
 };
 
-export default MoreInfo;
+export default Contacto;

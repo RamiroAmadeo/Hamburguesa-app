@@ -6,7 +6,7 @@ const List = ({list}) => {
             {list.map((list) => (
                 <td>
                     <h3 key={list.id}>{list.text}
-                        <h4>{list.day}</h4>
+                        <p>{list.day}</p>
                     </h3>
                     <img className={listStyle.img} src={list.img} alt=''></img>
                 </td>

@@ -1,0 +1,18 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+    height: 150px;
+}
+.ul{
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    background-color: yellowgreen;
+}
+.links{
+    list-style: none;
+    font-size: 26px;
+    color: black;
+}

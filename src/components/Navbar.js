@@ -1,14 +1,22 @@
+import NavbarStyles from "./Navbar.module.css"
+import icono from "../assets/icono-hamburguesa.png"
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
         <nav>
-            <ul>
-                <Link to="/about">
-                    <li>About</li>
+            <Link to="/">
+                <img src={icono} alt=""></img>
+            </Link>
+            <ul className={NavbarStyles.ul}>
+                <Link to="/menu">
+                    <li className={NavbarStyles.links}>Menu</li>
                 </Link>
-                <Link to="/info">
-                    <li>More info</li>
+                <Link to="/locales">
+                    <li className={NavbarStyles.links}>Locales</li>
+                </Link>
+                <Link to="/contacto">
+                    <li className={NavbarStyles.links}>Contacto</li>
                 </Link>
             </ul>
         </nav>
