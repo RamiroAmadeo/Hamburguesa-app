@@ -1,18 +1,22 @@
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: orange;
     height: 150px;
 }
+.icono{
+    height: 80px;
+    width: 80px;
+}
 .ul{
     display: flex;
-    width: 30%;
+    width: 315px;
     justify-content: space-evenly;
-    background-color: yellowgreen;
+    padding: 0;
 }
 .links{
     list-style: none;
-    font-size: 26px;
+    font-size: 18px;
     color: black;
 }

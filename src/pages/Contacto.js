@@ -1,10 +1,10 @@
-import Header from "../components/Header";
+import Header from "../components/HamburHome";
 import Navbar from "../components/Navbar";
 
 const Contacto = () => {
     return(
         <>
-            <Header />
+           {/*  <Header /> */}
             <Navbar />
         </>
     );

@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+    font-size: 35px;
+    color: white;
+    margin: 0;
+    background-image: url("../assets/fondo-hamburguesas.jpg");
+    background-size: cover;
+    background-position: center;
+}
