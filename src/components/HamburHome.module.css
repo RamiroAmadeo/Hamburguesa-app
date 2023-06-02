@@ -2,12 +2,50 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
     width: 100%;
     height: 650px;
     font-size: 35px;
     color: white;
-    margin: 0;
     background-image: url("../assets/fondo-hamburguesas.jpg");
     background-size: cover;
     background-position: center;
+}
+.section{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 50px;
+    background-color: azure;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box1 h6{
+    color: red;
+}
+.box1 h3{
+    width: 120px;
+    color: black;
+}
+.box1 p{
+    text-align: center;
+    width: 300px;
+}
+.boxImage{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 20px;
+}
+.image{
+    width: 100%;
+    height: 500px;
+}
+.menuBox{
+    text-align: center;
+}
+.menu{
+    width: 100px;
+    text-align: center;
 }
